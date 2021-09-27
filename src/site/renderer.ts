@@ -3,7 +3,7 @@ import { ContainerHost } from "compoventuals-container";
 import { Pre, Runtime } from "compoventuals";
 import { MessagePortNetwork } from "./message_port_network";
 
-const CONTAINER_URL = "./container/plaintext.html";
+const CONTAINER_URL = "./container/container.html";
 
 (async function () {
   const portPromise = new Promise<MessagePort>((resolve) => {

@@ -50,7 +50,7 @@
     "build:server": "tsc --build tsconfig-server.json",
     "electron": "electron dist/server/main.js",
     "start": "electron-forge start",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist out",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
