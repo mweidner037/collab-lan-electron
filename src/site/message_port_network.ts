@@ -1,4 +1,4 @@
-import { BroadcastNetwork } from "compoventuals";
+import { BroadcastNetwork } from "@collabs/collabs";
 
 export class MessagePortNetwork implements BroadcastNetwork {
   onreceive!: (message: Uint8Array) => void;

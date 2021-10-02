@@ -1,6 +1,6 @@
 import { ipcRenderer } from "electron";
-import { ContainerHost } from "compoventuals-container";
-import { Pre, Runtime } from "compoventuals";
+import { ContainerHost } from "@collabs/container";
+import { Pre, Runtime } from "@collabs/collabs";
 import { MessagePortNetwork } from "./message_port_network";
 
 const CONTAINER_URL = "./container/container.html";

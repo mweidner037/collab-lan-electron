@@ -1,7 +1,7 @@
 {
   "name": "collab-lan",
   "version": "0.1.0",
-  "description": "Compoventuals LAN Collaboration Demo",
+  "description": "Collabs LAN Collaboration Demo",
   "author": "Matthew Weidner",
   "main": "dist/server/main.js",
   "dependencies": {
@@ -16,6 +16,8 @@
     "peer-id": "^0.15.3"
   },
   "devDependencies": {
+    "@collabs/collabs": "^0.1.1",
+    "@collabs/container": "^0.1.1",
     "@electron-forge/cli": "^6.0.0-beta.61",
     "@electron-forge/maker-deb": "^6.0.0-beta.61",
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
@@ -27,8 +29,6 @@
     "@types/seedrandom": "^3.0.1",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.16.2",
-    "compoventuals": "file:../compoventuals/main",
-    "compoventuals-container": "file:../compoventuals/container",
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
     "electron": "^15.0.0",
@@ -57,11 +57,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "dir": "dist",
-        "ignore": [
-          "node_modules/compoventuals",
-          "node_modules/compoventuals-container"
-        ]
+        "dir": "dist"
       },
       "makers": [
         {
