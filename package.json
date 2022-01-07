@@ -1,6 +1,6 @@
 {
   "name": "collab-lan",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Collabs LAN Collaboration Demo",
   "author": "Matthew Weidner",
   "main": "dist/server/main.js",
