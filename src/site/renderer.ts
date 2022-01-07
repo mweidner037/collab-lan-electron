@@ -1,6 +1,6 @@
 import { ipcRenderer } from "electron";
 import { ContainerHost } from "@collabs/container";
-import { Pre, Runtime } from "@collabs/collabs";
+import { Pre, CRDTApp } from "@collabs/collabs";
 import { MessagePortNetwork } from "./message_port_network";
 
 const CONTAINER_URL = "./container/container.html";
@@ -14,7 +14,7 @@ const CONTAINER_URL = "./container/container.html";
   const port = await portPromise;
 
   const network = new MessagePortNetwork(port);
-  const runtime = new Runtime(network);
+  const app = new CRDTApp(network);
 
   // Add the container in an IFrame.
   const iframe = document.createElement("iframe");
@@ -33,7 +33,7 @@ const CONTAINER_URL = "./container/container.html";
   });
 
   // Attach the container.
-  const host = runtime.registerCrdt("host", Pre(ContainerHost)(iframe));
+  const host = app.registerCollab("host", Pre(ContainerHost)(iframe));
 
   port.start();
 

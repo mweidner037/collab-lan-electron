@@ -16,8 +16,8 @@
     "peer-id": "^0.15.3"
   },
   "devDependencies": {
-    "@collabs/collabs": "^0.1.1",
-    "@collabs/container": "^0.1.1",
+    "@collabs/collabs": "0.2.x",
+    "@collabs/container": "0.2.x",
     "@electron-forge/cli": "^6.0.0-beta.61",
     "@electron-forge/maker-deb": "^6.0.0-beta.61",
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
